@@ -102,6 +102,20 @@ Le workflow `.github/workflows/ci-cd.yml` :
 
 L'étape de déploiement nécessite les secrets GitHub suivants côté repo : `GCP_SA_KEY` (clé JSON d'un service account), `GCP_PROJECT_ID`, `GCP_REGION`. Sans ces secrets, la CI (build + tests) fonctionne quand même, seul le job de déploiement échouera.
 
+## Captures d'écran
+
+### Liste des tâches (filtrage par statut + recherche)
+
+![Liste des tâches](screenshots/tasks-list.png)
+
+### Création d'une tâche
+
+![Formulaire de création](screenshots/new-task-form.png)
+
+### Modification d'une tâche
+
+![Formulaire d'édition](screenshots/edit-task-form.png)
+
 ## Choix techniques
 
 - **JWT stateless** plutôt que sessions : plus simple à faire cohabiter avec un frontend SPA et un futur client mobile qui consommerait la même API.
